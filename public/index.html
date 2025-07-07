@@ -112,6 +112,40 @@
         padding: 6px;
     }
 }
+.hero-modern {
+    background: url('images/banner1.webp') center center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.location-badge {
+    display: inline-block;
+    background: white;
+    color: #e74c3c;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
 
     </style>
 </head>
@@ -136,12 +170,17 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1 class="display-4">Welcome to SunRaj Guest House</h1>
-            <p>Your cozy stay near Satsang Ashram  – peaceful, clean, and affordable.</p>
+    <!-- Updated Hero Section with Modern Villa Style -->
+    <header class="hero-modern">
+        <div class="hero-overlay">
+            <div class="container text-white text-center hero-content">
+                <span class="location-badge">Deoghar, Jharkhand</span>
+                <h1 class="display-3 fw-bold mt-3">HURRY!<br>GET THE BEST STAY FOR YOU Near Satsang Ashram</h1>
+                <p class="lead mt-3">Peaceful, affordable rooms near Satsang Ashram</p>
+            </div>
         </div>
     </header>
+
 
     <section class="bg-light text-center p-5">
         <img src="images/image.png" class="img-fluid rounded mb-4" alt="Refer and Earn" />
