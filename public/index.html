@@ -74,32 +74,45 @@
             font-weight: bold;
             color: #b8860b;
         }
-        .whatsapp-float {
-             position: fixed;
-             bottom: 20px;
-             right: 20px;
-             z-index: 999;
-             background-color: #25d366;
-             padding: 10px;
-             border-radius: 50%;
-             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             transition: transform 0.2s;
-         }
-    
-         .whatsapp-float:hover {
-             transform: scale(1.1);
-         }
-    
-         @media (max-width: 768px) {
-             .whatsapp-float {
-                 width: 50px;
-                 height: 50px;
-                 padding: 6px;
-             }
-         }
+        .whatsapp-float,
+.call-float {
+    position: fixed;
+    z-index: 999;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.whatsapp-float:hover,
+.call-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+}
+
+.call-float {
+    bottom: 80px; /* 60px above WhatsApp icon */
+    right: 20px;
+    background-color: #007bff; /* Blue for call icon */
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float,
+    .call-float {
+        width: 50px;
+        height: 50px;
+        padding: 6px;
+    }
+}
+
     </style>
 </head>
 
@@ -232,9 +245,16 @@
         </div>
     </section>
 
+    <!-- WhatsApp Floating Icon -->
     <a href="https://wa.me/917321040864" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
             style="width: 40px; height: 40px;">
+    </a>
+
+    <!-- Call Floating Icon -->
+    <a href="tel:+917321040864" class="call-float" title="Call Us">
+        <img src="images/call-icon.svg" alt="Call"
+            style="width: 28px; height: 28px;">
     </a>
   
     <!-- Footer -->
