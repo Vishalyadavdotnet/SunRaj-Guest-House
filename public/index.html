@@ -119,29 +119,7 @@
             padding: 6px;
         }
     }
-    @media (max-width: 768px) {
-    .hero-modern {
-        background-position: center top;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .hero-overlay {
-        padding: 60px 15px 40px;
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-}
+    
 
 .hero-modern {
     background: url('images/banner1.webp') center center/cover no-repeat;
@@ -153,6 +131,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 
 .hero-overlay {
@@ -167,6 +146,32 @@
 
 .hero-content {
     max-width: 800px;
+}
+
+@media (max-width: 768px) {
+    .hero-modern {
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        min-height:auto;
+        
+    }
+
+    .hero-overlay {
+        padding: 60px 15px 40px;
+        height: auto;
+        min-height:auto;
+        
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
 }
 
 .location-badge {
